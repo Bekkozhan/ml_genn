@@ -10,6 +10,7 @@ from .max_var import MaxVar
 from .readout import Readout
 from .spike_count import SpikeCount
 from .sum_var import SumVar
+from .windowed_sum_var import WindowedSumVar
 from .var import Var
 
 from ..utils.module import get_module_classes
@@ -17,4 +18,4 @@ from ..utils.module import get_module_classes
 default_readouts = get_module_classes(globals(), Readout)
 
 __all__ = ["AvgVar", "AvgVarExpWeight", "FirstSpikeTime", "MaxVar", "Readout",
-           "SpikeCount", "SumVar", "Var", "default_readouts"]
+           "SpikeCount", "SumVar", "Var", "WindowedSumVar", "default_readouts"]
